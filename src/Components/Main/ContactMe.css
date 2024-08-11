@@ -1,0 +1,22 @@
+#contactMe {
+  width: 40%;
+  height: 300px;
+  margin-top: 35svh;
+  margin-left: var(--mg-margin-m);
+  padding: var(--mg-padding-m);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#contactMe > button {
+  margin-top: var(--mg-margin-m);
+  width: 100px;
+  font-size: var(--mg-fontsize-button);
+  background-color: var(--mg-color06);
+  color: white;
+}
+
+.workColor {
+  color: var(--mg-color07);
+}

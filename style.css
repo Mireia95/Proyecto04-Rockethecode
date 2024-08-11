@@ -1,20 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:wght@100..900&display=swap');
 
-* {
-  font-family: 'Figtree', sans-serif;
-}
-
 :root {
   /* colors */
   --mg-color01: #ffffff;
-  --mg-color02: #232332;
-  --mg-color03: #ffcaf6;
+  --mg-color02: #200f1b;
+  --mg-color03: #fab4c1;
   --mg-color04: #fef2fc;
-  --mg-color05: #4b1a72;
+  --mg-color05: #946076;
+  --mg-color06: #d65e97;
+  --mg-color07: #4b1a72;
+  --mg-color08: #80555d;
 
   /* BG */
   --mg-BGcolor01: var(--mg-color01);
   --mg-BGcolor02: var(--mg-color02);
+  --mg-BGcolorIntSection: rgba(0, 0, 0, 0.2);
 
   /* texto */
   --mg-Textcolor01: var(--mg-color02);
@@ -22,21 +22,65 @@
   --mg-Textcolor03: var(--mg-color04);
   --mg-Textcolor04: var(--mg-color05);
 
-  --mg-fontsize-menu: 15px;
+  --mg-fontsize-menu: 14px;
   --mg-fonsize-title: 50px;
   --mg-fontsize-title02: 20px;
-  --gm-fonsize-button: 12px;
+  --mg-fontsize-button: 12px;
 
-  /* HEADER*/
   /* gap */
   --mg-gap01: 30px;
 
-  /* MAIN */
   /* padding */
   --mg-padding-xs: 10px;
   --mg-padding-s: 20px;
+  --mg-padding-m: 40px;
+  --mg-padding-l: 70px;
 
   /* margin */
-  -mg-margin-s: 20px;
-  -mg-margin-m: 30px;
+  --mg-margin-s: 20px;
+  --mg-margin-m: 30px;
+  --mg-margin-l: 50px;
+  --mg-margin-xl: 70px;
+
+  /* border radius */
+  --mg-borderradius-button: 10px;
+  --mg-borderradius-div: 20px;
+  --mg-borderradius-menu: 50px;
+}
+
+* {
+  font-family: 'Figtree', sans-serif;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+a {
+  color: var(--mg-color02);
+}
+
+button,
+select {
+  background-color: var(--mg-color04);
+  border-radius: var(--mg-borderradius-button);
+  border: none;
+  padding: var(--mg-padding-xs);
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3,
+h4 {
+  font-size: 20px;
+  font-weight: 400;
 }

@@ -1,0 +1,36 @@
+main {
+  display: flex;
+}
+
+/* style for title of sections */
+.mySection {
+  width: 60%;
+  height: 100svh;
+  background-image: linear-gradient(
+    to bottom,
+    var(--mg-color05),
+    var(--mg-color03)
+  );
+  display: fleX;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mySection > h2 {
+  width: 100%;
+  text-align: center;
+  background-color: var(--mg-color01);
+  font-weight: 600;
+  margin-top: 100px;
+}
+
+.mySection > h3 {
+  width: 100%;
+  text-align: center;
+  background-color: var(--mg-color08);
+  font-weight: 300;
+  font-size: 15px;
+  color: white;
+  height: 30px;
+  line-height: 30px; /* centrar verticalmente el texto */
+}

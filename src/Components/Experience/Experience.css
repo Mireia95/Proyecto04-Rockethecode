@@ -1,0 +1,51 @@
+/* class .company for div with titles of companies  */
+article {
+  display: flex;
+  gap: var(--mg-gap01);
+  width: 80%;
+  height: 60%;
+  margin-top: var(--mg-margin-m);
+  margin-bottom: var(--mg-margin-m);
+  background-color: var(--mg-BGcolorIntSection);
+  border-radius: var(--mg-borderradius-div);
+  padding: var(--mg-padding-m) 0;
+}
+
+.company {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  border-left: 3px solid var(--mg-color03);
+}
+
+.company > button {
+  max-width: 150px;
+  min-width: 115px;
+  border-radius: 0;
+  background-color: transparent;
+  color: var(--mg-color01);
+}
+
+.company > button:hover {
+  background-color: var(--mg-color04);
+  border-left: 3px solid var(--mg-color02);
+  color: var(--mg-color02);
+}
+
+.description {
+  width: 70%;
+  color: var(--mg-color01);
+}
+
+.description > h4 {
+  font-weight: 600;
+}
+
+.description > p:first-of-type {
+  font-weight: 100;
+  margin-bottom: var(--mg-margin-s);
+}
+.description > p {
+  font-size: 14px;
+  text-align: justify;
+}

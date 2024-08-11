@@ -1,0 +1,17 @@
+#header {
+  width: 100%;
+  display: flex;
+  position: fixed;
+  z-index: 1;
+  padding: var(--mg-padding-m);
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header > div {
+  display: flex;
+  width: 50%;
+  justify-content: left;
+  gap: var(--mg-gap01);
+  align-items: center;
+}

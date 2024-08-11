@@ -1,0 +1,31 @@
+/* css for animation of elements (in and out) */
+/* create 2 classes: animIn for in-animations , and animOut for out-animations */
+.animIn {
+  animation: In 0.5s ease-in 0s 1 normal forwards;
+}
+
+.animOut {
+  animation: Out 0.5s ease-out 0s 1 normal forwards;
+}
+
+@keyframes In {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes Out {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+}

@@ -1,0 +1,8 @@
+.palette > img {
+  width: 30px;
+}
+
+.palette {
+  padding: var(--mg-padding-xs);
+  background-color: transparent;
+}
