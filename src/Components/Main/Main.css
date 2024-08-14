@@ -8,10 +8,11 @@ main {
   height: 100svh;
   background-image: linear-gradient(
     to bottom,
-    var(--mg-color05),
-    var(--mg-color03)
+    var(--mg-colorSectionB),
+    var(--mg-colorSectionA)
   );
-  display: fleX;
+
+  display: flex;
   flex-direction: column;
   align-items: center;
 }

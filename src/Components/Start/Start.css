@@ -4,8 +4,8 @@
   height: 100svh;
   background-image: linear-gradient(
     to bottom,
-    var(--mg-color03),
-    var(--mg-color05)
+    var(--mg-colorStartA),
+    var(--mg-colorStartB)
   );
   display: flex;
   flex-direction: column;

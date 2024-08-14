@@ -8,7 +8,7 @@ export const createButtonBack = (section) => {
   backHome.classList.add('backHome');
   const backHomeIcon = document.createElement('img');
   backHomeIcon.src =
-    'https://res.cloudinary.com/dr2vohk2z/image/upload/v1723400573/ROCKTHECODE/iconos/backarrowPinkDark.png';
+    'https://res.cloudinary.com/dr2vohk2z/image/upload/v1723477662/ROCKTHECODE/iconos/arrowrightOrange_hdt40l.png';
   backHomeIcon.alt = 'back to home';
   backHome.appendChild(backHomeIcon);
 

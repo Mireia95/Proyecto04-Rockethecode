@@ -1,5 +1,5 @@
 /* class .company for div with titles of companies  */
-article {
+#experience > article {
   display: flex;
   gap: var(--mg-gap01);
   width: 80%;
@@ -17,10 +17,14 @@ article {
   flex-direction: column;
   border-left: 3px solid var(--mg-color03);
 }
-
 .company > button {
   max-width: 150px;
   min-width: 115px;
+  border-radius: 0;
+}
+.company > button:not(.company > button.companySelected) {
+  max-width: 200px;
+  min-width: 150px;
   border-radius: 0;
   background-color: transparent;
   color: var(--mg-color01);
@@ -32,9 +36,15 @@ article {
   color: var(--mg-color02);
 }
 
+.companySelected {
+  background-color: var(--mg-color01);
+  border-left: 3px solid var(--mg-color02);
+  color: var(--mg-color02);
+}
+
 .description {
   width: 70%;
-  color: var(--mg-color01);
+  color: var(--mg-color02);
 }
 
 .description > h4 {

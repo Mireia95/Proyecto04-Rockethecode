@@ -4,17 +4,21 @@
   /* colors */
   --mg-color01: #ffffff;
   --mg-color02: #200f1b;
-  --mg-color03: #fab4c1;
+  --mg-colorStartA: rgb(254, 149, 50);
+  --mg-colorStartB: rgb(251, 87, 120);
+  --mg-colorSectionA: rgba(254, 149, 50, 0.7);
+  --mg-colorSectionB: rgba(251, 87, 120, 0.7);
   --mg-color04: #fef2fc;
-  --mg-color05: #946076;
-  --mg-color06: #d65e97;
+
+  --mg-color06: #ff547e;
   --mg-color07: #4b1a72;
-  --mg-color08: #80555d;
+  --mg-color08: rgb(201, 90, 112);
+  --mg-color08alpha: rgba(201, 90, 112, 0.7);
 
   /* BG */
   --mg-BGcolor01: var(--mg-color01);
   --mg-BGcolor02: var(--mg-color02);
-  --mg-BGcolorIntSection: rgba(0, 0, 0, 0.2);
+  --mg-BGcolorIntSection: rgba(255, 255, 255, 0.5);
 
   /* texto */
   --mg-Textcolor01: var(--mg-color02);
@@ -62,7 +66,8 @@ a {
 }
 
 button,
-select {
+select,
+a {
   background-color: var(--mg-color04);
   border-radius: var(--mg-borderradius-button);
   border: none;

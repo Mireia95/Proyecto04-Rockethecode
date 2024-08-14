@@ -69,7 +69,7 @@ export const skills = [
 
 export const experience = [
   {
-    company: 'Lampopst VFX',
+    company: 'Lamppost VFX',
     role: 'VFX Production Coordinator',
     date: 'Sept 2021 - present',
     description:

@@ -4,7 +4,7 @@ import { navOptions } from '../../Data/Data'; //imoprt options of nav
 export const createNav = () => {
   const nav = document.createElement('nav');
   const ul = document.createElement('ul');
-
+  
   for (const option of navOptions) {
     const li = document.createElement('li');
     const a = document.createElement('a');

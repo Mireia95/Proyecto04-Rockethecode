@@ -1,17 +1,18 @@
 .backHome {
-  background-color: transparent;
   width: 50px;
   height: 50px;
   padding: 0;
   border-radius: 50%;
+  background-color: var(--mg-BGcolorIntSection);
+  display: block;
   transition: all 0.3s;
 }
 
 .backHome:hover {
-  background-color: var(--mg-color01);
   transform: scale(1.1);
+  background-color: var(--mg-color01);
 }
 
 .backHome > img {
-  width: 100%;
+  width: 30px;
 }

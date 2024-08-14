@@ -36,15 +36,15 @@
 .menu > button:not(button.aboutMe) {
   background-image: linear-gradient(
     to bottom,
-    var(--mg-color05),
-    var(--mg-color03)
+    var(--mg-colorStartB),
+    var(--mg-colorStartA)
   );
 }
 
 .menu > button.aboutMe {
   position: absolute;
   z-index: 0;
-  background-color: var(--mg-color05);
+  background-color: var(--mg-colorStartB);
 }
 
 .menu > button.aboutMe:hover {
