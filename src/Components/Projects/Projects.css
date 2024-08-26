@@ -1,13 +1,22 @@
-.contArticles {
-  width: 90%;
-  max-width: 680px;
+#projects {
+  position: relative;
+}
 
-  /* background-color: var(--mg-BGcolorIntSection); */
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding: 20px 30px;
+#projects > div {
+  width: 90%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 680px;
+}
+
+.contArticles {
+  height: 90%;
+  padding-bottom: 30px;
   display: flex;
   justify-content: start;
+  align-items: center;
   gap: 30px;
   overflow-x: scroll;
 }
@@ -29,9 +38,11 @@
 }
 
 .project {
-  min-width: 300px;
-  min-height: 500px;
-  max-height: 600px;
+  min-width: 330px;
+  max-width: 500px;
+  height: 100%;
+  min-height: 400px;
+  max-height: 550px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -39,7 +50,7 @@
   background-color: var(--mg-color08alpha);
   color: var(--mg-color01);
   padding: var(--mg-padding-s);
-  gap: 10px;
+  gap: 5px;
   transition: all 0.5s;
 }
 
@@ -59,7 +70,7 @@
 }
 
 .project p {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .codes {
@@ -73,8 +84,11 @@
   padding: 15px;
   justify-content: space-between;
 }
-
-/* .project > div:last-of-type > a {
-  padding: 10px 20px;
-  background-color: ;
-} */
+.project > div:last-of-type > a {
+  transition: all 0.2s;
+  font-size: 14px;
+}
+.project > div:last-of-type > a:hover {
+  background-color: var(--mg-color08alpha);
+  color: var(--mg-color01);
+}

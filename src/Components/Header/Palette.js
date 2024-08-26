@@ -9,7 +9,7 @@ export const createPalette = () => {
   button.classList.add('palette');
 
   button.addEventListener('click', () => {
-    console.log('change color!!'); //!
+    console.log('change color');
   });
 
   return button;

@@ -1,0 +1,6 @@
+@media (max-width: 450px) {
+  .contactme {
+    padding: var(--mg-padding-s);
+    font-size: 12px;
+  }
+}

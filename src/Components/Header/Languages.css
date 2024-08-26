@@ -1,0 +1,15 @@
+select {
+  background-color: var(--mg-color02);
+  color: var(--mg-color01);
+  border-radius: var(--mg-borderradius-button);
+  border: none;
+  padding: var(--mg-padding-xs);
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  select {
+    padding: 5px;
+    font-size: 12px;
+  }
+}

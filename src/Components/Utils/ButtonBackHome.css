@@ -1,11 +1,13 @@
 .backHome {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   padding: 0;
   border-radius: 50%;
   background-color: var(--mg-BGcolorIntSection);
   display: block;
   transition: all 0.3s;
+  position: absolute;
+  bottom: 20px; /* IMPO add position: relative to father element */
 }
 
 .backHome:hover {
@@ -14,5 +16,13 @@
 }
 
 .backHome > img {
-  width: 30px;
+  width: 20px;
+  display: block;
+  margin: auto;
+}
+
+@media (max-width: 1150px) {
+  .backHome {
+    display: none;
+  }
 }

@@ -2,29 +2,37 @@
   position: relative;
 }
 
-#aboutMe > h2 {
-  margin-top: 130px;
-}
-
 #aboutMe > img {
-  width: 200px;
-  height: 200px;
+  width: 20%;
+  min-width: 100px;
+  max-width: 200px;
+  height: auto;
+  aspect-ratio: 1;
   position: absolute;
   transform: translateY(-50%);
   left: 75px;
-  top: 165px;
+  top: 120px;
 }
 
 #aboutMe > div {
+  height: 70%;
+  display: flex;
+  align-items: center;
+  padding: var(--mg-padding-m) 0;
+  margin-top: var(--mg-margin-m);
+}
+
+#aboutMe > div > div {
   width: 80%;
-  margin-top: 90px;
-  margin-bottom: var(--mg-margin-m);
+  height: 100%;
+  margin: auto;
   background-color: var(--mg-BGcolorIntSection);
   padding: var(--mg-padding-m);
   border-radius: var(--mg-borderradius-div);
+  overflow: auto;
 }
 
-#aboutMe > div > p {
+#aboutMe > div > div > p {
   color: var(--mg-color02);
   font-size: 15px;
   font-weight: 200;

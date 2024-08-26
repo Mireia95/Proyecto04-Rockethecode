@@ -1,0 +1,35 @@
+@media (max-width: 1150px) {
+  #aboutMe > img {
+    left: 15%;
+    top: 110px;
+  }
+}
+
+@media (max-width: 750px) {
+  #aboutMe > h2 {
+    font-size: 20px;
+  }
+
+  #aboutMe > h3 {
+    font-size: 13px;
+  }
+
+  #aboutMe > div > div > p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 450px) {
+  #aboutMe > img {
+    left: 5%;
+  }
+  #aboutMe > div > div {
+    padding: var(--mg-padding-s);
+  }
+}
+
+@media (max-height: 1000px) and (max-width: 1150px) {
+  #aboutMe > div {
+    margin-top: 10px;
+  }
+}

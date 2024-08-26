@@ -1,0 +1,5 @@
+@media (max-width: 500px) {
+  #header {
+    padding: var(--mg-padding-xs) var(--mg-padding-s);
+  }
+}

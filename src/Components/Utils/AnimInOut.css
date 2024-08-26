@@ -8,6 +8,10 @@
   animation: Out 0.5s ease-out 0s 1 normal forwards;
 }
 
+.animOutNoTransl {
+  animation: OutNoTranslate 0.5s ease-out 0s 1 normal forwards;
+}
+
 @keyframes In {
   0% {
     opacity: 0;
@@ -27,5 +31,15 @@
   100% {
     opacity: 0;
     transform: translateX(-50px);
+  }
+}
+
+@keyframes OutNoTranslate {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
   }
 }

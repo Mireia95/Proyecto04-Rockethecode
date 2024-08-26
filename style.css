@@ -3,22 +3,24 @@
 :root {
   /* colors */
   --mg-color01: #ffffff;
+  --mg-color01alpha: rgba(255, 255, 255, 0.8);
   --mg-color02: #200f1b;
   --mg-colorStartA: rgb(254, 149, 50);
   --mg-colorStartB: rgb(251, 87, 120);
   --mg-colorSectionA: rgba(254, 149, 50, 0.7);
   --mg-colorSectionB: rgba(251, 87, 120, 0.7);
-  --mg-color04: #fef2fc;
+  --mg-color04: #ffeffc;
 
   --mg-color06: #ff547e;
   --mg-color07: #4b1a72;
-  --mg-color08: rgb(201, 90, 112);
+  --mg-color08: #c95a70;
   --mg-color08alpha: rgba(201, 90, 112, 0.7);
 
   /* BG */
   --mg-BGcolor01: var(--mg-color01);
   --mg-BGcolor02: var(--mg-color02);
   --mg-BGcolorIntSection: rgba(255, 255, 255, 0.5);
+  --mg-BGcolorIntSection02: rgba(0, 0, 0, 0.2);
 
   /* texto */
   --mg-Textcolor01: var(--mg-color02);
@@ -66,7 +68,6 @@ a {
 }
 
 button,
-select,
 a {
   background-color: var(--mg-color04);
   border-radius: var(--mg-borderradius-button);
@@ -78,6 +79,7 @@ a {
 h1 {
   font-size: 50px;
   font-weight: 500;
+  color: var(--mg-BGcolor02);
 }
 
 h2 {

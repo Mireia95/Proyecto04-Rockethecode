@@ -1,0 +1,14 @@
+@media (max-width: 1150px) {
+  #contactMe {
+    width: 70%;
+    padding: var(--mg-padding-s);
+  }
+  #contactMe > h1 {
+    font-size: 40px;
+  }
+
+  #contactMe > h3,
+  #contactMe > h4 {
+    font-size: 15px;
+  }
+}

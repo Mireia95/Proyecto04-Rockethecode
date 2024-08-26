@@ -1,7 +1,9 @@
-import { experience } from '../../Data/Data';
+import { experience } from '../../Data/DataExperience';
 import { createButtonBack } from '../Utils/ButtonBackHome';
+import { createDescript } from '../Utils/CreateDescript';
 import { createTitleSection } from '../Utils/TitleSection';
 import './Experience.css';
+import './ExperienceResponsive.css';
 
 export const printExperience = () => {
   const main = document.querySelector('main');
@@ -10,6 +12,7 @@ export const printExperience = () => {
   createTitleSection('Experience', 'Where I worked', section);
   section.id = 'experience';
 
+  const divSection = document.createElement('div');
   const article = document.createElement('article');
   const divCompanies = document.createElement('div');
   divCompanies.classList.add('company');
@@ -24,7 +27,7 @@ export const printExperience = () => {
     divCompanies.appendChild(button);
     if (i === 0) {
       button.classList.add('companySelected');
-      createDescriptWork(work, divDescript);
+      createDescript(work.role, work.date, work.description, divDescript);
     }
     button.addEventListener('click', (e) => {
       //remove class "companySelected" from all buttons
@@ -34,9 +37,7 @@ export const printExperience = () => {
       //add class "companySelected" only in this button clicked
       button.classList.add('companySelected');
 
-      createDescriptWork(work, divDescript);
-
-      //?
+      createDescript(work.role, work.date, work.description, divDescript);
     });
   }
 
@@ -44,21 +45,8 @@ export const printExperience = () => {
 
   article.appendChild(divCompanies);
   article.appendChild(divDescript);
-  section.appendChild(article);
+  divSection.appendChild(article);
+  section.appendChild(divSection);
   section.appendChild(backHome);
   main.appendChild(section);
-};
-
-const createDescriptWork = (work, divDescript) => {
-  divDescript.innerText = '';
-  const h4 = document.createElement('h4');
-  h4.innerText = work.role;
-  const pDate = document.createElement('p');
-  pDate.innerText = work.date;
-  const descript = document.createElement('p');
-  descript.innerHTML = work.description;
-
-  divDescript.appendChild(h4);
-  divDescript.appendChild(pDate);
-  divDescript.appendChild(descript);
 };

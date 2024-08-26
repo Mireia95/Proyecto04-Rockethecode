@@ -1,0 +1,85 @@
+.bgContactme {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--mg-color01alpha);
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.contactme {
+  position: absolute;
+  max-width: 400px;
+  width: 80%;
+  height: 290px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--mg-gap01);
+  padding: var(--mg-padding-m);
+  background-color: var(--mg-color01);
+
+  border-radius: var(--mg-borderradius-div);
+  box-shadow: 0 0 25px -4px gray;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
+
+.contactme > h3 {
+  color: var(--mg-color06);
+  text-align: center;
+  font-weight: 700;
+}
+.contactme > div:first-of-type {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: var(--mg-padding-xs);
+  border-radius: 20px;
+  border: 1px solid var(--mg-color02);
+}
+.contactme > div > img {
+  width: 20px;
+}
+
+.contactme > div:last-of-type {
+  display: flex;
+  justify-content: center;
+  gap: var(--mg-gap01);
+}
+
+.contactme > div > a {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--mg-color02);
+  background-color: var(--mg-color01);
+  transition: all 0.3s;
+}
+
+.contactme > div > a:hover {
+  transform: scale(1.2);
+}
+.contactme > div > a > img {
+  width: 50px;
+}
+
+.close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  border-radius: 50%;
+  background-color: var(--mg-color02);
+  padding: 5px;
+}
+
+.close > img {
+  width: 20px;
+  display: block;
+}
+
+.closeX {
+  opacity: 0;
+}

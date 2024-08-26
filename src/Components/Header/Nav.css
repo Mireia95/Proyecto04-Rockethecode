@@ -1,6 +1,14 @@
+nav {
+  display: none;
+}
+
 nav > ul {
   display: flex;
   align-items: center;
   gap: var(--mg-gap01);
   font-size: var(--mg-fontsize-menu);
+}
+
+nav button {
+  background-color: transparent;
 }

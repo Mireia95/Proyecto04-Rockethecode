@@ -1,5 +1,6 @@
 import { createTitleSection } from '../Utils/TitleSection';
 import './AboutMe.css';
+import './AboutMeResponsive.css';
 import '../Utils/AnimInOut.css';
 import { createButtonBack } from '../Utils/ButtonBackHome';
 
@@ -13,18 +14,18 @@ export const printAboutMe = () => {
   img.src =
     'https://res.cloudinary.com/dr2vohk2z/image/upload/v1723211915/ROCKTHECODE/Proyecto04_portfolio/MireiaFoto.png';
   img.alt = 'Me';
+  const divSection = document.createElement('div');
   const divP = document.createElement('div');
   const p = document.createElement('p');
   p.innerHTML =
-    'Del Cine a la Programación. <br><br> Actualmente, soy Coordinadora de Producción en el sector de los VFX de cine. Este trabajo me ha permitido entender lo importante que es una buena organización y el trabajo en equipo. Resolver dudas y solucionar problemas es mi día a día para que el proyecto avance, facilitando la comunicación entre diferentes departamentos. <br>  A pesar de la satisfacción de trabajar en este sector, el amor por la programación nunca se apagó. Por eso, he decidido participar en un bootcamp como desarrolladora web full stack, donde he adquirido conocimientos sólidos en Web Full Responsive, API integration y Website Development. Estoy entusiasmada por aplicar estas habilidades en un entorno profesional y seguir creciendo en este campo tan dinámico. <br>Estudiar diseño gráfico en bachillerato, me ha permitido tener una visión integral del proceso creativo e implementar diseños usando herramientas como Figma y AdobeIllustrator. <br> Me considero una persona organizada, flexible y muy curiosa, con una capacidad de aprendizaje rápido y continuo. Mi experiencia en la producción, combinada con mis habilidades técnicas, me permite escribir un código sólido y organizado, disfrutando poder trabajar en estrecha colaboración con los equipos de diseño. <br> Estoy lista para aportar valor a tu team y contribuir al éxito de tus proyectos digitales. ¡Vamos a construir algo increíble juntos!';
+    "From Cinema to Programming. <br><br> Currently, I am a VFX Production Coordinator in the cinema sector. This job has allowed me to understand the importance of good organization and teamwork. Resolving questions and solving problems are part of my daily routine to ensure the project progresses smoothly, making communication clear between differents departments. Despite the satisfaction of working in this industry, my love for programming never faded. Studying graphic design in high school gave me a comprehensive view of the creative process, using tools like Figma and Adobe Illustrator. At university I explored computer science and the basic of programming languages, such as HTML, CSS, Ruby, MySQL, Matlab and Processing. To expand my knowledge in programming I decided to start a bootcamp to became a full-stack web developer, where I am currently studying and acquiring solid skills day by day. <br> <br> I consider myself an organized, flexible, and very curious person, with a capacity for quick and continuous learning. My experience in production, mixed with my programming studies, allows me to write solid and organized code, enjoying teamwork and the close collaboration with designers. <br> I am excited to apply and develop these skills in a professional environment and grow in this dynamic area of work. <br> <br> In my free time I like to spend time in nature, I love the sea and board sports. My current dream is to buy a camper and travel around the world. I constantly set goals for myself because when you stop learning, you stop growing. And I don't want to stop growing.";
 
   const backHome = createButtonBack(section);
 
   divP.appendChild(p);
-
+  divSection.appendChild(divP);
   section.appendChild(img);
-  section.appendChild(divP);
+  section.appendChild(divSection);
   section.appendChild(backHome);
-
   main.appendChild(section);
 };

@@ -1,7 +1,8 @@
-import { skills } from '../../Data/Data';
+import { skills } from '../../Data/DataSkills';
 import { createButtonBack } from '../Utils/ButtonBackHome';
 import { createTitleSection } from '../Utils/TitleSection';
 import './Skills.css';
+import './SkillsResponsive.css';
 
 export const printSkills = () => {
   const main = document.querySelector('main');
@@ -9,6 +10,7 @@ export const printSkills = () => {
   section.classList.add('animIn');
   createTitleSection('Skills', 'Which programms I work with', section);
   section.id = 'skills';
+  const divSection = document.createElement('div');
   const backHome = createButtonBack(section);
 
   //creo los divs contenedores de mis skills
@@ -33,10 +35,10 @@ export const printSkills = () => {
           divImgSkills.appendChild(img);
         }
       }
-      section.appendChild(div);
+      divSection.appendChild(div);
     }
   }
-
+  section.appendChild(divSection);
   section.appendChild(backHome);
   main.appendChild(section);
 };

@@ -3,3 +3,7 @@ export const cleanElement = (element, father) => {
     father.removeChild(element);
   }, 500);
 };
+
+export const cleanElementNoDelay = (element, father) => {
+  father.removeChild(element);
+};

@@ -3,12 +3,12 @@
   display: flex;
   position: fixed;
   z-index: 1;
-  padding: var(--mg-padding-m);
+  padding: var(--mg-padding-s) var(--mg-padding-m);
   justify-content: space-between;
   align-items: center;
 }
 
-#header > div {
+#header > div:first-of-type {
   display: flex;
   width: 50%;
   justify-content: left;

@@ -9,6 +9,7 @@ export const printProjects = () => {
   section.classList.add('animIn');
   createTitleSection('Projects', 'Some things I built', section);
   section.id = 'projects';
+  const divSection = document.createElement('div');
   const divContArticle = document.createElement('div');
   divContArticle.classList.add('contArticles');
   for (const project of projects) {
@@ -48,7 +49,8 @@ export const printProjects = () => {
   }
 
   const backHome = createButtonBack(section);
-  section.appendChild(divContArticle);
+  divSection.appendChild(divContArticle);
+  section.appendChild(divSection);
   section.appendChild(backHome);
   main.appendChild(section);
 };

@@ -1,11 +1,20 @@
-/* class .company for div with titles of companies  */
-#experience > article {
+#experience {
+  position: relative;
+}
+
+#experience > div {
+  height: 70%;
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* class .company for div with titles of companies  */
+#experience > div > article {
+  display: flex;
+  justify-content: space-between;
   gap: var(--mg-gap01);
   width: 80%;
-  height: 60%;
-  margin-top: var(--mg-margin-m);
-  margin-bottom: var(--mg-margin-m);
   background-color: var(--mg-BGcolorIntSection);
   border-radius: var(--mg-borderradius-div);
   padding: var(--mg-padding-m) 0;
@@ -31,7 +40,7 @@
 }
 
 .company > button:hover {
-  background-color: var(--mg-color04);
+  background-color: var(--mg-color01);
   border-left: 3px solid var(--mg-color02);
   color: var(--mg-color02);
 }
@@ -43,19 +52,29 @@
 }
 
 .description {
-  width: 70%;
+  width: 60%;
   color: var(--mg-color02);
+  margin-right: var(--mg-margin-l);
 }
 
 .description > h4 {
   font-weight: 600;
+  color: var(--mg-color02);
+  background-color: var(--mg-color04);
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 17px;
+  padding: 10px;
 }
 
 .description > p:first-of-type {
   font-weight: 100;
   margin-bottom: var(--mg-margin-s);
+  text-align: center;
+  margin-bottom: var(--mg-margin-m);
 }
 .description > p {
   font-size: 14px;
   text-align: justify;
+  font-weight: 200;
 }

@@ -1,5 +1,6 @@
 main {
   display: flex;
+  height: 100svh;
 }
 
 /* style for title of sections */
@@ -8,8 +9,8 @@ main {
   height: 100svh;
   background-image: linear-gradient(
     to bottom,
-    var(--mg-colorSectionB),
-    var(--mg-colorSectionA)
+    var(--mg-colorSectionA),
+    var(--mg-colorSectionB)
   );
 
   display: flex;
@@ -22,13 +23,14 @@ main {
   text-align: center;
   background-color: var(--mg-color01);
   font-weight: 600;
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 .mySection > h3 {
   width: 100%;
   text-align: center;
   background-color: var(--mg-color08);
+  /*  margin-bottom: 30px; */
   font-weight: 300;
   font-size: 15px;
   color: white;

@@ -9,48 +9,21 @@ import { cleanElement } from '../Utils/CleanElement';
 import '../Utils/AnimInOut.css';
 
 import './Menu.css';
+import './MenuResponsive.css';
+import { printMenuOptions } from '../Utils/PrintMenuOptions';
 
 export const printMenu = () => {
   const main = document.querySelector('main');
+  const section = document.createElement('section');
+  section.id = 'menuSection';
   const div = document.createElement('div');
   div.classList.add('menu');
   div.classList.add('animIn');
+  const animClass = 'animOut';
   for (const option of navOptions) {
-    const button = document.createElement('button');
-
-    button.innerHTML = `<img src=${option.img} alt=${option.name}> </img> <h3> ${option.name} </h3>`;
-
-    if (option.name === 'About Me') {
-      button.classList.add('aboutMe');
-    }
-
-    button.addEventListener('click', () => {
-      cleanElement(div, main);
-      div.classList.add('animOut');
-      if (option.name === 'About Me') {
-        setTimeout(() => {
-          printAboutMe();
-        }, 500);
-      } else if (option.name === 'Projects') {
-        setTimeout(() => {
-          printProjects();
-        }, 500);
-      } else if (option.name === 'Education') {
-        setTimeout(() => {
-          printEducation();
-        }, 500);
-      } else if (option.name === 'Experience') {
-        setTimeout(() => {
-          printExperience();
-        }, 500);
-      } else if (option.name === 'Skills') {
-        setTimeout(() => {
-          printSkills();
-        }, 500);
-      }
-    });
-
-    div.appendChild(button);
+    printMenuOptions(option, div, section, main, animClass);
   }
-  main.appendChild(div);
+
+  section.appendChild(div);
+  main.appendChild(section);
 };

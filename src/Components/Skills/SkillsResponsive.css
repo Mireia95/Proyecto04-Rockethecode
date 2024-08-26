@@ -1,0 +1,17 @@
+@media (max-height: 880px) {
+  #skills > div {
+    gap: 20px;
+    margin-top: var(--mg-margin-xs);
+  }
+
+  #skills > div > div {
+    padding: var(--mg-padding-s);
+    padding-top: var(--mg-padding-xs);
+  }
+}
+
+@media (max-width: 1150px) {
+  #skills > div {
+    height: 70%;
+  }
+}
