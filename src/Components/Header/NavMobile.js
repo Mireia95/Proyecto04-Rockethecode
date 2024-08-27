@@ -22,6 +22,10 @@ export const createNavMobile = () => {
       const main = document.querySelector('main');
       main.innerHTML = '';
       if (option.name === 'Home') {
+        const navAll = document.querySelector(".navAll");
+        if(navAll){
+          
+        }
         const contact = createContactMe();
         contact.classList.add('animIn');
         main.appendChild(contact);
@@ -31,6 +35,7 @@ export const createNavMobile = () => {
         printProjects();
       } else if (option.name === 'Menu') {
         printNavAll();
+
       }
     });
     divMenu.appendChild(button);

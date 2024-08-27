@@ -18,8 +18,9 @@ export const printContactPopup = () => {
   const h3 = document.createElement('h3');
   h3.innerText = 'Contact me';
   const divMail = document.createElement('div');
+  divMail.classList.add('mail');
   divMail.innerHTML =
-    "<img alt='email' src='https://res.cloudinary.com/dr2vohk2z/image/upload/v1724074807/ROCKTHECODE/Proyecto04_portfolio/contactme/mail.png'> </img> <p>mireia95.granzotto@gmail.com </p>";
+    "<img alt='email' src='https://res.cloudinary.com/dr2vohk2z/image/upload/v1724074807/ROCKTHECODE/Proyecto04_portfolio/contactme/mail.png'> </img> <a href=mailto:mireia95.granzotto@gmail.com>mireia95.granzotto@gmail.com </a>";
 
   divPopup.appendChild(close);
   divPopup.appendChild(h3);
