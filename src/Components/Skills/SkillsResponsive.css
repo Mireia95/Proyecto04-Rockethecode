@@ -1,3 +1,8 @@
+@media (max-width: 1150px) {
+  #skills > div {
+    height: 70%;
+  }
+}
 @media (max-height: 880px) {
   #skills > div {
     gap: 20px;
@@ -10,8 +15,12 @@
   }
 }
 
-@media (max-width: 1150px) {
-  #skills > div {
-    height: 70%;
+@media (max-width: 500px) {
+  #skills > h2 {
+    font-size: 30px;
+  }
+
+  #skills > h3 {
+    font-size: 14px;
   }
 }

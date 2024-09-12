@@ -5,6 +5,12 @@
   }
 }
 
+@media (max-height: 1000px) and (max-width: 1150px) {
+  #aboutMe > div {
+    margin-top: 10px;
+  }
+}
+
 @media (max-width: 750px) {
   #aboutMe > h2 {
     font-size: 20px;
@@ -25,11 +31,5 @@
   }
   #aboutMe > div > div {
     padding: var(--mg-padding-s);
-  }
-}
-
-@media (max-height: 1000px) and (max-width: 1150px) {
-  #aboutMe > div {
-    margin-top: 10px;
   }
 }

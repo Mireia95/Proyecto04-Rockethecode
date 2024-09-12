@@ -2,7 +2,7 @@
 
 My portfolio (MG)
 
-He dividido mi proyectos en componentes:
+He dividido mi proyecto en componentes:
 
 - file "main.js" es el que está linkeado al file index.html : aquí llamo todas las funciones vitales para que la página web funcione. Las funciones que llamo están en otras componentes
 
@@ -34,7 +34,7 @@ En la carpeta "Utils" encontramos todas las funciones y estilos reutilizados en 
 
 La carpeta Data: tiene todos los datos necesarios para pintar mi página
 
-La carpeta Start: controla la nimación y el design al cargar la página
+La carpeta Start: controla la animación y el design al cargar la página
 
 PENDING:
 

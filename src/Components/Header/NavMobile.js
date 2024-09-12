@@ -4,11 +4,13 @@ import { cleanElementNoDelay } from '../Utils/CleanElement';
 import './NavMobile.css';
 
 import { printMain } from '../Main/Main';
-import { printAboutMe } from '../AboutMe/AboutMe';
+
 import { createContactMe } from '../Main/ContactMe';
-import { printProjects } from '../Projects/Projects';
-import { printNavAll } from './NavMobileAll';
+
 import { printMenuOptions } from '../Utils/PrintMenuOptions';
+import { printAboutMe } from '../AboutMe/AboutMe';
+import { printProjects } from '../Projects/Projects';
+import { optionsMobile } from '../../Data/Options';
 
 export const createNavMobile = () => {
   const divMenu = document.createElement('div');
@@ -22,21 +24,14 @@ export const createNavMobile = () => {
       const main = document.querySelector('main');
       main.innerHTML = '';
       if (option.name === 'Home') {
-        const navAll = document.querySelector(".navAll");
-        if(navAll){
-          
-        }
         const contact = createContactMe();
         contact.classList.add('animIn');
         main.appendChild(contact);
-      } else if (option.name === 'About') {
-        printAboutMe();
-      } else if (option.name === 'Projects') {
-        printProjects();
-      } else if (option.name === 'Menu') {
-        printNavAll();
-
       }
+      //por cada boton pulsado ejecuto su funcion, que está guardada en el array optionsMobile
+      optionsMobile[option.name]();
+      /*   por ejemplo el primer caso seria: 
+       optionsMobile[Home] : su valor es la funcion createContactMe() */
     });
     divMenu.appendChild(button);
   }

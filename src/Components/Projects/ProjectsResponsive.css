@@ -1,0 +1,9 @@
+@media (max-width: 500px) {
+  #projects > h2 {
+    font-size: 30px;
+  }
+
+  #projects > h3 {
+    font-size: 14px;
+  }
+}

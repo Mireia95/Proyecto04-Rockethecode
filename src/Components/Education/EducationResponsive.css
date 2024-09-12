@@ -47,3 +47,13 @@
     font-size: 12px;
   }
 }
+
+@media (max-width: 500px) {
+  #education > h2 {
+    font-size: 30px;
+  }
+
+  #education > h3 {
+    font-size: 14px;
+  }
+}

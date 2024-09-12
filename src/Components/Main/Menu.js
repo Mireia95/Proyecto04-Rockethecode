@@ -1,10 +1,4 @@
 import { navOptions } from '../../Data/Data';
-import { printAboutMe } from '../AboutMe/AboutMe';
-import { printEducation } from '../Education/Education';
-import { printExperience } from '../Experience/Experience';
-import { printProjects } from '../Projects/Projects';
-import { printSkills } from '../Skills/Skills';
-import { cleanElement } from '../Utils/CleanElement';
 
 import '../Utils/AnimInOut.css';
 

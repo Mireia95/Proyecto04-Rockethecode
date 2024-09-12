@@ -2,6 +2,7 @@ import { projects } from '../../Data/DataProjects';
 import { createButtonBack } from '../Utils/ButtonBackHome';
 import { createTitleSection } from '../Utils/TitleSection';
 import './Projects.css';
+import './ProjectsResponsive.css';
 
 export const printProjects = () => {
   const main = document.querySelector('main');
