@@ -1,7 +1,7 @@
 import { experience } from '../../Data/DataExperience';
-import { createButtonBack } from '../Utils/ButtonBackHome';
-import { createDescript } from '../Utils/CreateDescript';
-import { createTitleSection } from '../Utils/TitleSection';
+import { createButtonBack } from '../../Components/Utils/ButtonBackHome';
+import { createDescript } from '../../Components/Utils/CreateDescript';
+import { createTitleSection } from '../../Components/Utils/TitleSection';
 import './Experience.css';
 import './ExperienceResponsive.css';
 

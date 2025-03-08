@@ -1,12 +1,12 @@
-import { printAboutMe } from '../Components/AboutMe/AboutMe';
-import { printEducation } from '../Components/Education/Education';
-import { printExperience } from '../Components/Experience/Experience';
+import { printAboutMe } from '../Pages/AboutMe/AboutMe';
+import { printEducation } from '../Pages/Education/Education';
+import { printExperience } from '../Pages/Experience/Experience';
 import { printNavAll } from '../Components/Header/NavMobileAll';
 
 import { createContactMe } from '../Components/Main/ContactMe';
-import { printProjects } from '../Components/Projects/Projects';
+import { printProjects } from '../Pages/Projects/Projects';
 
-import { printSkills } from '../Components/Skills/Skills';
+import { printSkills } from '../Pages/Skills/Skills';
 
 //objeto con las opciones que da el menu. Cada clave llama a una funcion que pinta dicha seccion
 export const options = {

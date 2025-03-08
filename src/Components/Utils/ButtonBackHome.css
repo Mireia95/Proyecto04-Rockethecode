@@ -3,11 +3,10 @@
   height: 30px;
   padding: 0;
   border-radius: 50%;
+  margin-top: 50px;
   background-color: var(--mg-BGcolorIntSection);
   display: block;
   transition: all 0.3s;
-  position: absolute;
-  bottom: 20px; /* IMPO add position: relative to father element */
 }
 
 .backHome:hover {

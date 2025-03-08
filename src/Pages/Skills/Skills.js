@@ -1,6 +1,6 @@
 import { skills } from '../../Data/DataSkills';
-import { createButtonBack } from '../Utils/ButtonBackHome';
-import { createTitleSection } from '../Utils/TitleSection';
+import { createButtonBack } from '../../Components/Utils/ButtonBackHome';
+import { createTitleSection } from '../../Components/Utils/TitleSection';
 import './Skills.css';
 import './SkillsResponsive.css';
 

@@ -11,6 +11,15 @@ export const projects = [
     GitHub: 'https://github.com/Mireia95/Proyecto03-Rockthecode'
   },
   {
+    Name: 'Games Hub',
+    Img: 'https://res.cloudinary.com/dr2vohk2z/image/upload/v1741450569/ROCKTHECODE/Proyecto04_portfolio/Projects/gameshub_znvhep.png',
+    Description:
+      'Coding some games with JS Vanilla, practing logic programming and new techniques',
+    Codes: ['HTML', 'CSS', 'JS VANILLA', 'VITE'],
+    Preview: 'https://gameshubmireia.netlify.app/',
+    GitHub: 'https://github.com/Mireia95/GamesHub'
+  },
+  {
     Name: 'WaveRide',
     Img: 'https://res.cloudinary.com/dr2vohk2z/image/upload/v1723656816/ROCKTHECODE/Proyecto04_portfolio/Projects/waveride.jpg',
     Description:

@@ -2,10 +2,9 @@
   display: none;
   width: 90%;
   position: fixed;
-  bottom: 50px;
+  bottom: 30px;
   transform: translateX(-50%);
   left: 50%;
-
   background-image: linear-gradient(
     to right,
     var(--mg-colorStartB),
@@ -21,6 +20,15 @@
   justify-content: center;
   background-color: transparent;
   color: var(--mg-color01);
+}
+
+.menuMobile > button:hover {
+  background-color: var(--mg-colorStartA);
+}
+
+.active {
+  background-color: var(--mg-colorStartA);
+  border: 1px solid white;
 }
 
 .menuMobile > button > img {

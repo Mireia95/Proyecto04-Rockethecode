@@ -1,6 +1,6 @@
 import { projects } from '../../Data/DataProjects';
-import { createButtonBack } from '../Utils/ButtonBackHome';
-import { createTitleSection } from '../Utils/TitleSection';
+import { createButtonBack } from '../../Components/Utils/ButtonBackHome';
+import { createTitleSection } from '../../Components/Utils/TitleSection';
 import './Projects.css';
 import './ProjectsResponsive.css';
 
@@ -13,6 +13,7 @@ export const printProjects = () => {
   const divSection = document.createElement('div');
   const divContArticle = document.createElement('div');
   divContArticle.classList.add('contArticles');
+
   for (const project of projects) {
     const article = document.createElement('article');
     article.classList.add('project');
@@ -25,6 +26,7 @@ export const printProjects = () => {
     pDescript.innerText = project.Description;
     const divCodes = document.createElement('div');
     divCodes.classList.add('codes');
+
     for (const code of project.Codes) {
       const p = document.createElement('p');
       p.innerText = code;

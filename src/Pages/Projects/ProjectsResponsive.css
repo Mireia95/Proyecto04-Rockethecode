@@ -6,4 +6,8 @@
   #projects > h3 {
     font-size: 14px;
   }
+  #projects > div {
+    width: 100%;
+    height: 70%;
+  }
 }

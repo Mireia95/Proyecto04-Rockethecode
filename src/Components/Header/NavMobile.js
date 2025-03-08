@@ -8,8 +8,8 @@ import { printMain } from '../Main/Main';
 import { createContactMe } from '../Main/ContactMe';
 
 import { printMenuOptions } from '../Utils/PrintMenuOptions';
-import { printAboutMe } from '../AboutMe/AboutMe';
-import { printProjects } from '../Projects/Projects';
+import { printAboutMe } from '../../Pages/AboutMe/AboutMe';
+import { printProjects } from '../../Pages/Projects/Projects';
 import { optionsMobile } from '../../Data/Options';
 
 export const createNavMobile = () => {
@@ -23,6 +23,7 @@ export const createNavMobile = () => {
     button.addEventListener('click', () => {
       const main = document.querySelector('main');
       main.innerHTML = '';
+
       if (option.name === 'Home') {
         const contact = createContactMe();
         contact.classList.add('animIn');
@@ -32,6 +33,14 @@ export const createNavMobile = () => {
       optionsMobile[option.name]();
       /*   por ejemplo el primer caso seria: 
        optionsMobile[Home] : su valor es la funcion createContactMe() */
+      //y le asigno la clase active para el cambio de BGColor
+      const buttons = document.querySelectorAll('.menuMobile > button');
+      console.log(buttons);
+      for (const button of buttons) {
+        button.classList.remove('active');
+      }
+
+      button.classList.add('active');
     });
     divMenu.appendChild(button);
   }

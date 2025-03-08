@@ -1,7 +1,7 @@
 import { education } from '../../Data/DataEducation';
-import { createButtonBack } from '../Utils/ButtonBackHome';
-import { createDescript } from '../Utils/CreateDescript';
-import { createTitleSection } from '../Utils/TitleSection';
+import { createButtonBack } from '../../Components/Utils/ButtonBackHome';
+import { createDescript } from '../../Components/Utils/CreateDescript';
+import { createTitleSection } from '../../Components/Utils/TitleSection';
 import './Education.css';
 import './EducationResponsive.css';
 
