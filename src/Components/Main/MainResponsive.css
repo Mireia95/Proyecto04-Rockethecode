@@ -3,3 +3,9 @@
     width: 100%;
   }
 }
+
+@media (max-height: 800px) or (max-width: 500px) {
+  .mySection > h2 {
+    margin-top: 60px;
+  }
+}

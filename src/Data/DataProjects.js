@@ -2,6 +2,15 @@
 
 export const projects = [
   {
+    Name: 'PopcornBcn',
+    Img: 'https://res.cloudinary.com/dr2vohk2z/image/upload/v1752070242/ROCKTHECODE/Proyecto04_portfolio/Projects/pocornBCNStart_ogutfe.jpg',
+    Description:
+      'Full-stack webpage that I developed from scratch, including both the frontend and backend. Its purpose is to help users discover which movies are currently playing in cinemas across Barcelona. Users can browse available films, find screening times, see a list of cinemas, and leave comments on movies',
+    Codes: ['HTML', 'CSS', 'JS VANILLA', 'VITE'],
+    Preview: 'https://popcorn-bcn-frontend.vercel.app/',
+    GitHub: 'https://github.com/Mireia95/PopcornBCNFrontend'
+  },
+  {
     Name: 'PicMuse',
     Img: 'https://res.cloudinary.com/dr2vohk2z/image/upload/v1723484211/ROCKTHECODE/Proyecto04_portfolio/Projects/picmuse_rbta18.jpg',
     Description:

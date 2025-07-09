@@ -1,6 +1,13 @@
+@media (max-width: 1150px) {
+  #projects > div {
+    width: 100%;
+    height: 80%;
+  }
+}
+
 @media (max-width: 500px) {
   #projects > h2 {
-    font-size: 30px;
+    font-size: 20px;
   }
 
   #projects > h3 {
@@ -8,6 +15,13 @@
   }
   #projects > div {
     width: 100%;
-    height: 70%;
+    height: 80%;
+  }
+
+  .contArticles {
+    height: auto;
+    padding-top: 16px;
+    padding-bottom: 30px;
+    gap: 30px;
   }
 }

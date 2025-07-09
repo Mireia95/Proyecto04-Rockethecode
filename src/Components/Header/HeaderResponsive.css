@@ -3,3 +3,9 @@
     padding: var(--mg-padding-xs) var(--mg-padding-s);
   }
 }
+
+@media (max-height: 800) {
+  #header {
+    padding: 8px 16px;
+  }
+}
