@@ -2,6 +2,18 @@
 
 My portfolio (MG)
 
+## Project Link:
+
+https://mireiagranzotto.netlify.app/
+
+## Desarrollado con
+
+- Javascript Vanilla
+- HTML
+- CSS
+
+## Descripción
+
 He dividido mi proyecto en componentes:
 
 - file "main.js" es el que está linkeado al file index.html : aquí llamo todas las funciones vitales para que la página web funcione. Las funciones que llamo están en otras componentes
